@@ -1,6 +1,13 @@
-\documentclass[fleqn, 12pt]{scrreprt}
-\usepackage[english]{babel}
+\documentclass[bibliography=totocnumbered, 12pt]{scrreprt}
+
+% APA reference style
+\usepackage{apacite}
+\usepackage[nottoc,notlof,notlot]{tocbibind} 
+\renewcommand\bibname{References}
+
 \usepackage{scrlayer-scrpage}
+\usepackage{graphicx}
+
 
 \usepackage{xpatch}
 \xpatchcmd\maketitle
@@ -21,9 +28,38 @@
 \author{Gabriel Adward \and Albin Forsberg}
 \publishers{Jönköping University}
 
+\bibliographystyle{apacite}
+
+
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+        \includegraphics[width=0.4\textwidth]{./Images/ju.png}
+        \vspace{2cm}
+        
+        % Very big title
+        \Huge
+        \textbf{Bachelors Thesis Name}
+        
+        \vspace{0.5cm}
+        \LARGE
+        Maybe Subtitle
+        
+        \vfill
+        \small
+        % No indent
+        \noindent
+        \textbf{Main Subject Area:} Computer Science \\
+        \textbf{Author:} Gabriel Adward, Albin Forsberg \\
+        \textbf{Supervisor:} Patrick Riehmann \\
+        \textbf{JÖNKÖPING} 2024 03
+
+        \newpage
+        \vfill 
+        \small
+        This final thesis has been carried out at the School of Engineering at Jönköping University within Computer Engineering. The authors are responsible for the presented opinions, conclusions and results.  
+
+\end{titlepage}
 
 \begin{abstract}
 \end{abstract}
@@ -38,5 +74,11 @@
 \input{Chapters/3-Theoretical-framework}
 \input{Chapters/4-Results}
 \input{Chapters/5-Discussion}
+
+\cite{greenwade93}
+
+
+% References add to toc and print
+\bibliography{bib}
 
 \end{document}

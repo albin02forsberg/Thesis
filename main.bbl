@@ -1,0 +1,25 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Greenwade%
+}{%
+Greenwade%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+greenwade93}
+\APACinsertmetastar {%
+greenwade93}%
+\begin{APACrefauthors}%
+Greenwade, G\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})} {The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{TUGBoat}{14}{3}{342--351}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
