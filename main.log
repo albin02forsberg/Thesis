@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.4)  5 MAR 2024 14:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.4)  5 MAR 2024 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -172,11 +172,32 @@ Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2183
 )
 Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
 (scrlayer-scrpage)             alias to `pageheadfoot' on input line 1106.
+) (c:/texlive/2023/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty
+Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
+) (c:/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/02/07 v24.2 The Babel package
+\babel@savecnt=\count199
+\U@D=\dimen143
+\l@unhyphenated=\language89
+ (c:/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count266
+ (c:/texlive/2023/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language23). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language23). Reported on input line 108.
+)) (c:/texlive/2023/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
 ) (c:/texlive/2023/texmf-dist/tex/latex/xpatch/xpatch.sty (c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-02-20 L3 programming layer (loader) 
  (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count199
+\l__color_backend_stack_int=\count267
 \l__pdf_internal_box=\box53
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
@@ -184,36 +205,36 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 Package: xparse 2024-02-18 L3 Experimental document command parser
 ) (c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count266
+\etb@tempcnta=\count268
 )) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-Package scrbase Info: activating english \abstractname on input line 35.
-Package scrbase Info: activating english \partname on input line 35.
-Package scrbase Info: activating english \chaptername on input line 35.
-Package scrbase Info: activating english \appendixname on input line 35.
-Package scrbase Info: activating english \figurename on input line 35.
-Package scrbase Info: activating english \tablename on input line 35.
-Package scrbase Info: activating english \contentsname on input line 35.
-Package scrbase Info: activating english \listfigurename on input line 35.
-Package scrbase Info: activating english \listtablename on input line 35.
-Package scrbase Info: activating english \bibname on input line 35.
-Package scrbase Info: activating english \indexname on input line 35.
-Package tocbasic Info: usage of `tocbibind' detected on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+Package scrbase Info: activating english \abstractname on input line 53.
+Package scrbase Info: activating english \partname on input line 53.
+Package scrbase Info: activating english \chaptername on input line 53.
+Package scrbase Info: activating english \appendixname on input line 53.
+Package scrbase Info: activating english \figurename on input line 53.
+Package scrbase Info: activating english \tablename on input line 53.
+Package scrbase Info: activating english \contentsname on input line 53.
+Package scrbase Info: activating english \listfigurename on input line 53.
+Package scrbase Info: activating english \listtablename on input line 53.
+Package scrbase Info: activating english \bibname on input line 53.
+Package scrbase Info: activating english \indexname on input line 53.
+Package tocbasic Info: usage of `tocbibind' detected on input line 53.
 
 
 Package tocbasic Warning: `tocbibind' redefinition of `\tableofcontents'
@@ -233,23 +254,23 @@ Package tocbasic Warning: `tocbibind' redefinition of `\listoftables'
 (tocbasic)                Note: Loading `tocbibind' without option `notlot'
 (tocbasic)                can break several features of `tocbasic'.
 
-\c@maskedRefs=\count267
+\c@maskedRefs=\count269
 (c:/texlive/2023/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 ) (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count268
-\scratchdimen=\dimen143
+\scratchcounter=\count270
+\scratchdimen=\dimen144
 \scratchbox=\box54
-\nofMPsegments=\count269
-\nofMParguments=\count270
+\nofMPsegments=\count271
+\nofMParguments=\count272
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count271
-\MPscratchDim=\dimen144
-\MPnumerator=\count272
-\makeMPintoPDFobject=\count273
+\MPscratchCnt=\count273
+\MPscratchDim=\dimen145
+\MPnumerator=\count274
+\makeMPintoPDFobject=\count275
 \everyMPtoPDFconversion=\toks19
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -260,55 +281,64 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <./Images/ju.png, id=1, 162.279pt x 90.3375pt>
 File: ./Images/ju.png Graphic file (type png)
 <use ./Images/ju.png>
-Package pdftex.def Info: ./Images/ju.png  used on input line 38.
+Package pdftex.def Info: ./Images/ju.png  used on input line 56.
 (pdftex.def)             Requested size: 167.29967pt x 93.13962pt.
- [1
+
+Overfull \hbox (41.89378pt too wide) in paragraph at lines 61--62
+[]\OT1/cmr/bx/n/24.88 Bachelors The-sis Name 
+ []
+
+[1
 
 
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/ju.png>] (./Chapters/0-Abstract.tex) [2
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/ju.png>] [2
 
 
-] (./main.toc
+]
+chapter without number
+(./Chapters/0-Abstract.tex)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 3.
+(Font)              <10.95> on input line 82.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 3.
+(Font)              <8> on input line 82.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 3.
-)
+(Font)              <6> on input line 82.
+ [3
+
+] (./main.toc)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- (./Chapters/1-Introduction.tex [3
+ (./Chapters/1-Introduction.tex [4
 
 ]
 chapter 1.
-) (./Chapters/2-Method-implementation.tex [4
+) (./Chapters/2-Method-implementation.tex [5
 
 ]
 chapter 2.
-) (./Chapters/3-Theoretical-framework.tex [5
+) (./Chapters/3-Theoretical-framework.tex [6
 
 ]
 chapter 3.
-) (./Chapters/4-Results.tex [6
+) (./Chapters/4-Results.tex [7
 
 ]
 chapter 4.
-) (./Chapters/5-Discussion.tex [7
+) (./Chapters/5-Discussion.tex [8
 
 ]
 chapter 5.
-) (./Chapters/6-Conclusion.tex [8
+) (./Chapters/6-Conclusion.tex [9
 
 ]
 chapter 6.
-) (./main.bbl [9
+) (./main.bbl [10
 
 ]
 chapter 7.
-) [10
+) [11
 
 ] (./main.aux)
  ***********
@@ -317,18 +347,18 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6928 strings out of 474116
- 163348 string characters out of 5747718
+ 7979 strings out of 474116
+ 182915 string characters out of 5747718
  1937190 words of memory out of 5000000
- 29240 multiletter control sequences out of 15000+600000
+ 30272 multiletter control sequences out of 15000+600000
  564201 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,107p,10928b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,107p,10928b,607s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (10 pages, 106108 bytes).
+Output written on main.pdf (11 pages, 106306 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

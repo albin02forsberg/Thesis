@@ -9,6 +9,16 @@
 % Add header to abstract
 \usepackage{scrlayer-scrpage}
 
+\usepackage{anyfontsize}
+
+\usepackage[english]{babel}
+
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Table of Contents}%
+  \renewcommand{\bibname}%
+    {References}%
+}
 
 \usepackage{xpatch}
 \xpatchcmd\maketitle
@@ -21,6 +31,14 @@
 %\makeatother
 
 \renewcommand\titlepagestyle{scrheadings}
+
+
+\pagestyle{scrheadings}
+
+% Add section number for toc
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
 
 \addtokomafont{subtitle}{\Large}
 
@@ -39,7 +57,7 @@
         \vspace{2cm}
         
         % 40pt font size
-        \Huge \Huge
+        \fontsize{40}{40}\selectfont
         \textbf{Bachelors Thesis Name}
         
         \vspace{0.5cm}
@@ -56,10 +74,14 @@
         \textbf{JÖNKÖPING} 2024 03
 \end{titlepage}
 
+% Add abstract to toc
+
 \begin{abstract}
+    \addchap{Abstract}
     \input{Chapters/0-Abstract}
 \end{abstract}
 
+% Table of contents with set
 \tableofcontents
 
 
