@@ -97,9 +97,6 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT ./main.toc
-INPUT ./main.toc
-INPUT main.toc
 OUTPUT main.toc
 INPUT ./Chapters/1-Introduction.tex
 INPUT ./Chapters/1-Introduction.tex
@@ -127,15 +124,3 @@ INPUT ./Chapters/5-Discussion.tex
 INPUT ./Chapters/5-Discussion.tex
 INPUT ./Chapters/5-Discussion.tex
 INPUT Chapters/5-Discussion.tex
-INPUT ./main.bbl
-INPUT ./main.bbl
-INPUT main.bbl
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT main.aux
-INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
-INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
