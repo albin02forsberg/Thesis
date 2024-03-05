@@ -1,10 +1,13 @@
-\documentclass[bibliography=totocnumbered, 12pt]{scrreprt}
+\documentclass[11pt]{scrreprt}
 
 % APA reference style
 \usepackage{apacite}
-\usepackage[nottoc,notlof,notlot]{tocbibind}
-\usepackage{scrlayer-scrpage}
+\usepackage[numbib]{tocbibind}
+%\usepackage{scrlayer-scrpage}
 \usepackage{graphicx}
+
+% Add header to abstract
+\usepackage{scrlayer-scrpage}
 
 
 \usepackage{xpatch}
@@ -51,15 +54,10 @@
         \textbf{Author:} Gabriel Adward, Albin Forsberg \\
         \textbf{Supervisor:} Patrick Riehmann \\
         \textbf{JÖNKÖPING} 2024 03
-
-        \newpage
-        \vfill 
-        \small
-        This final thesis has been carried out at the School of Engineering at Jönköping University within Computer Engineering. The authors are responsible for the presented opinions, conclusions and results.  
-
 \end{titlepage}
 
 \begin{abstract}
+    \input{Chapters/0-Abstract}
 \end{abstract}
 
 \tableofcontents
@@ -72,6 +70,7 @@
 \input{Chapters/3-Theoretical-framework}
 \input{Chapters/4-Results}
 \input{Chapters/5-Discussion}
+\input{Chapters/6-Conclusion}
 
 \cite{greenwade93}
 
