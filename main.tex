@@ -1,0 +1,42 @@
+\documentclass[fleqn, 12pt]{scrreprt}
+\usepackage[english]{babel}
+\usepackage{scrlayer-scrpage}
+
+\usepackage{xpatch}
+\xpatchcmd\maketitle
+  {\huge \@title}{\Huge \@title\thispagestyle{\titlepagestyle}}
+  {}{\PatchFailed}
+%\makeatletter
+%\xpatchcmd\@maketitle% this command is used if titlepage=false is set
+  %{\huge \@title}{\Huge \@title}
+  %{}{\PatchFailed}
+%\makeatother
+
+\renewcommand\titlepagestyle{scrheadings}
+
+\addtokomafont{subtitle}{\Large}
+
+\title{Bachelors Thesis Name}
+\subtitle{Maybe Subtitle}
+\author{Gabriel Adward \and Albin Forsberg}
+\publishers{Jönköping University}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\tableofcontents
+
+
+
+% Chapters
+\input{Chapters/1-Introduction}
+\input{Chapters/2-Method-implementation}
+\input{Chapters/3-Theoretical-framework}
+\input{Chapters/4-Results}
+\input{Chapters/5-Discussion}
+
+\end{document}
