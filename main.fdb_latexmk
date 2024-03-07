@@ -1,13 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1709647620.03912 "main.aux" "main.bbl" "main" 1709647621.8594 0
+["bibtex main"] 1709813163.80288 "main.aux" "main.bbl" "main" 1709813165.72803 0
   "./bib.bib" 1709641276 253 0810be99547e6f3295f454437e22fee4 ""
   "c:/texlive/2023/texmf-dist/bibtex/bst/apacite/apacite.bst" 1709582780 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1709647621 3615 b6b160ce28e796f193019c78c3c69e5d "pdflatex"
+  "main.aux" 1709813165 3790 142c878934432c3dc07ac82e4235b1f5 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1709647620.32917 "c:/Users/albin/github/Thesis/main.tex" "main.pdf" "main" 1709647621.85971 0
+["pdflatex"] 1709813164.10647 "c:/Users/albin/github/Thesis/main.tex" "main.pdf" "main" 1709813165.72832 0
+  "Appendices/Appendix1.tex" 1709813159 35 01739acd060603228d8f1887779d9512 ""
   "Chapters/0-Abstract.tex" 1709646673 45 d00439c038aeae7aafc260be3ec64c1c ""
   "Chapters/1-Introduction.tex" 1709641276 157 dcc99706612e4daa0947f110e1c325c6 ""
   "Chapters/2-Method-implementation.tex" 1709641276 158 b1c39044b8b4cb994d0d1a4566d09592 ""
@@ -16,7 +17,7 @@
   "Chapters/5-Discussion.tex" 1709646839 82 152c68a6a18bd00eb8b1d336a75784a5 ""
   "Chapters/6-Conclusion.tex" 1709646934 176 ee4e411e0f0c1a51dc52d5c0254ed5e8 ""
   "Images/ju.png" 1709641378 19558 0f224eb1be62252230776fe19e25181a ""
-  "c:/Users/albin/github/Thesis/main.tex" 1709647616 2237 df64c408b2be26536c74a65ac233bda8 ""
+  "c:/Users/albin/github/Thesis/main.tex" 1709813105 2314 440601416e2595ed7411d03ec96cfe89 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1709583574 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1709583125 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1709583125 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -79,10 +80,10 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1709586335 5518052 de2a91c664d75f3971de4662dc6b5a65 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1709586409 8221397 12e6580eb7a2f79ccb22223239a22f62 ""
   "c:/texlive/2023/texmf.cnf" 1709586322 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1709647621 3615 b6b160ce28e796f193019c78c3c69e5d "pdflatex"
-  "main.bbl" 1709647620 564 73885c9cbfbf93e835e39799b74e1e3c "bibtex main"
-  "main.tex" 1709647616 2237 df64c408b2be26536c74a65ac233bda8 ""
-  "main.toc" 1709647621 1533 ff446bd59d722729a9da3ab19b0981aa "pdflatex"
+  "main.aux" 1709813165 3790 142c878934432c3dc07ac82e4235b1f5 "pdflatex"
+  "main.bbl" 1709813164 564 73885c9cbfbf93e835e39799b74e1e3c "bibtex main"
+  "main.tex" 1709813105 2314 440601416e2595ed7411d03ec96cfe89 ""
+  "main.toc" 1709813165 1591 ce278b71ea82e15d9dc6b4b7107ee713 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

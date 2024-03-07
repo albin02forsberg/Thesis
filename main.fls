@@ -153,6 +153,11 @@ INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT ./Appendices/Appendix1.tex
+INPUT ./Appendices/Appendix1.tex
+INPUT ./Appendices/Appendix1.tex
+INPUT ./Appendices/Appendix1.tex
+INPUT Appendices/Appendix1.tex
 INPUT main.aux
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
