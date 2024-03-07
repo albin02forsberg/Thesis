@@ -5,6 +5,7 @@
 \usepackage[numbib]{tocbibind}
 %\usepackage{scrlayer-scrpage}
 \usepackage{graphicx}
+\usepackage{fancyhdr}
 
 % Add header to abstract
 \usepackage{scrlayer-scrpage}
@@ -49,7 +50,6 @@
 
 \bibliographystyle{apacite}
 
-
 \begin{document}
 
 \begin{titlepage}
@@ -74,17 +74,19 @@
         \textbf{JÖNKÖPING} 2024 03
 \end{titlepage}
 
-% Add abstract to toc
 
+
+\pagenumbering{Roman}
+
+% Add abstract to toc
 \begin{abstract}
     \addchap{Abstract}
     \input{Chapters/0-Abstract}
 \end{abstract}
 
+\pagenumbering{arabic}
 % Table of contents with set
 \tableofcontents
-
-
 
 % Chapters
 \input{Chapters/1-Introduction}
@@ -94,10 +96,10 @@
 \input{Chapters/5-Discussion}
 \input{Chapters/6-Conclusion}
 
-\cite{greenwade93}
+\cite{DECAS}
 
 % References add to toc and print
-\bibliography{bib}
+\bibliography{references}
 
 % Appendices
 \chapter{Appendices}
