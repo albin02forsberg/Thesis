@@ -1,109 +1,61 @@
-\documentclass[11pt]{scrreprt}
-
-% APA reference style
-\usepackage{apacite}
-\usepackage[numbib]{tocbibind}
-%\usepackage{scrlayer-scrpage}
-\usepackage{graphicx}
-\usepackage{fancyhdr}
-
-% Add header to abstract
-\usepackage{scrlayer-scrpage}
-
-\usepackage{anyfontsize}
-
-\usepackage[english]{babel}
-
-\addto\captionsenglish{% Replace "english" with the language you use
-  \renewcommand{\contentsname}%
-    {Table of Contents}%
-  \renewcommand{\bibname}%
-    {References}%
-}
-
-\usepackage{xpatch}
-\xpatchcmd\maketitle
-  {\huge \@title}{\Huge \@title\thispagestyle{\titlepagestyle}}
-  {}{\PatchFailed}
-%\makeatletter
-%\xpatchcmd\@maketitle% this command is used if titlepage=false is set
-  %{\huge \@title}{\Huge \@title}
-  %{}{\PatchFailed}
-%\makeatother
-
-\renewcommand\titlepagestyle{scrheadings}
+\documentclass[12pt,a4paper, twoside]{JU-template}
 
 
-\pagestyle{scrheadings}
-
-% Add section number for toc
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
-
-
-\addtokomafont{subtitle}{\Large}
-
-\title{Bachelors Thesis Name}
-\subtitle{Maybe Subtitle}
-\author{Gabriel Adward \and Albin Forsberg}
-\publishers{Jönköping University}
-
-\bibliographystyle{apacite}
+%Included for Gather Purpose only:
+%input "thesisreferences.bib"
 
 \begin{document}
 
-\begin{titlepage}
-        \includegraphics[width=0.4\textwidth]{./Images/ju.png}
-        \vspace{2cm}
-        
-        % 40pt font size
-        \fontsize{40}{40}\selectfont
-        \textbf{Bachelors Thesis Name}
-        
-        \vspace{0.5cm}
-        \LARGE
-        Maybe Subtitle
-        
-        \vfill
-        \small
-        % No indent
-        \noindent
-        \textbf{Main Subject Area:} Computer Science \\
-        \textbf{Author:} Gabriel Adward, Albin Forsberg \\
-        \textbf{Supervisor:} Patrick Riehmann \\
-        \textbf{JÖNKÖPING} 2024 03
-\end{titlepage}
+\defaultbibliography{references.bib}     %% Change this only.
+\defaultbibliographystyle{ieeetra}        %% Could be changed if you like 
+                                           %% references typeset differently.
+%-------------------------------------------------------------------
+% Define title, author, etc.
+%-------------------------------------------------------------------
+\def\thesistitle{The Title of Your Thesis}
+\def\theauthor{Gabriel Adward, Albin Forsberg}
+\def\theaddress{Dept.\ of Computer Science and Electrical Engineering\\
+Lule{\aa} University of Technology\\ Lule{\aa}, Sweden}
+
+\def\supervisors{Patrick Riehmann}
+\def\supervisorstring{Supervisor:} % Edit here if you have only one supervisor
+\def\dedication{To my surprise...}
+
+% Read abstract and preface from separate files.
+% Make sure these exist. See example files.
+\def\theabstract{\input{Chapters/0-Abstract.tex}}
+\def\thepreface{preface}
 
 
+% Change here if you want to remove the logo printed on the first page
 
-\pagenumbering{Roman}
+%\def\thelogo{\includegraphics[width=2.5cm]{eu1_f_eng}} % old EU logo
+\def\thelogo{} % no logo
 
-% Add abstract to toc
-\begin{abstract}
-    \addchap{Abstract}
-    \input{Chapters/0-Abstract}
-\end{abstract}
+% The definitions above could be put directly in the function call below,
+% but is here defined explicitly, for the purpose of clarity.
 
-\pagenumbering{arabic}
-% Table of contents with set
-\tableofcontents
+\startpreamble
+  {\thesistitle}
+  {\theauthor}
+  {\theaddress}
+  {\supervisors}
+  {\dedication}
+  {\theabstract}
+  {\thepreface}
+  {\thelogo}
 
 % Chapters
-\input{Chapters/1-Introduction}
-\input{Chapters/2-Method-implementation}
-\input{Chapters/3-Theoretical-framework}
-\input{Chapters/4-Results}
-\input{Chapters/5-Discussion}
-\input{Chapters/6-Conclusion}
+\begin{bibunit}
+\input{Chapters/1-Introduction.tex}
+\input{Chapters/2-Method-implementation.tex}
+\input{Chapters/3-Theoretical-framework.tex}
+\input{Chapters/4-Results.tex}
+\input{Chapters/5-Discussion.tex}
+\input{Chapters/6-Conclusion.tex}
 
-\cite{DECAS}
+\makebib
 
-% References add to toc and print
-\bibliography{references}
-
-% Appendices
-\chapter{Appendices}
-\appendix
-\input{Appendices/Appendix1}
+\end{bibunit}
 
 \end{document}
