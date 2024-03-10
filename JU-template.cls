@@ -50,7 +50,7 @@
 \setlength{\textheight}{8.75in}
 \setlength{\evensidemargin}{-4.5mm}
 \setlength{\oddsidemargin}{5.5mm}
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{3}
 \setcounter{topnumber}{2}
 \setcounter{totalnumber}{3}
 \renewcommand{\thechapter}{\arabic{chapter}}
