@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper, twoside]{JU-template}
+\documentclass[12pt,a4paper, twoside, draft]{JU-template}
 
 
 %Included for Gather Purpose only:
@@ -7,7 +7,7 @@
 \begin{document}
 
 \defaultbibliography{references.bib}     %% Change this only.
-\defaultbibliographystyle{ieeetra}        %% Could be changed if you like 
+\defaultbibliographystyle{ieeetran}        %% Could be changed if you like 
                                            %% references typeset differently.
 %-------------------------------------------------------------------
 % Define title, author, etc.
@@ -46,13 +46,25 @@ Lule{\aa} University of Technology\\ Lule{\aa}, Sweden}
   {\thelogo}
 
 % Chapters
+\startchapters
 \begin{bibunit}
-\input{Chapters/1-Introduction.tex}
-\input{Chapters/2-Method-implementation.tex}
-\input{Chapters/3-Theoretical-framework.tex}
-\input{Chapters/4-Results.tex}
-\input{Chapters/5-Discussion.tex}
-\input{Chapters/6-Conclusion.tex}
+  \makechapter[\myquote]{Introduction}{Introduction}{Introduction\label{ch1}}
+  \input{Chapters/1-Introduction.tex}
+
+  \makechapter[\myquote]{Method and Implementation}{Method and Implementation}{Method and Implementation\label{ch2}}
+  \input{Chapters/2-Method-implementation.tex}
+
+  \makechapter[\myquote]{Theoretical Framework}{Theoretical Framework}{Theoretical Framework\label{ch3}}
+  \input{Chapters/3-Theoretical-framework.tex}
+
+  \makechapter[\myquote]{Results}{Results}{Results\label{ch4}}
+  \input{Chapters/4-Results.tex}
+
+  \makechapter[\myquote]{Discussion}{Discussion}{Discussion\label{ch5}}
+  \input{Chapters/5-Discussion.tex}
+
+  \makechapter[\myquote]{Conclusion}{Conclusion}{Conclusion\label{ch6}}
+  \input{Chapters/6-Conclusion.tex}
 
 \makebib
 

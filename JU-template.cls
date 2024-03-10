@@ -39,6 +39,7 @@
 \RequirePackage{newtxtext, newtxmath}
 \RequirePackage{color}
 \RequirePackage{titlesec}
+% \RequirePackage[style=apa]{biblatex}
 
 
 % ******************************************************
@@ -417,12 +418,8 @@
     \fancyhead[LE]{\thepage} 
     \fancyhead[RO]{\thepage}
     \thispagestyle{plain}
-    \vspace*{2cm}
-    \hrule
-    \vspace*{8\p@}%
     \par
-    {\Huge{References}}\\[-6pt]
-    \hrule
+    {\Huge{References}}\\
     \addcontentsline{toc}{chapter}{References}
     \putbib
     \cleardoublepage
