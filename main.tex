@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper, twoside, draft]{JU-template}
+\documentclass[12pt,a4paper,openright,final,twoside]{JU-template}
 
 
 %Included for Gather Purpose only:
@@ -47,11 +47,13 @@ Lule{\aa} University of Technology\\ Lule{\aa}, Sweden}
 
 % Chapters
 \startchapters
+ \makechapter{Introduction}{Introduction}{Introduction\label{ch1}}
+\def\myquote{``This report, by its very length, defends itself against the risk of being read."\\[.5\baselineskip] Winston Churchill}
 \begin{bibunit}
-  \makechapter[\myquote]{Introduction}{Introduction}{Introduction\label{ch1}}
+ 
   \input{Chapters/1-Introduction.tex}
 
-  \makechapter[\myquote]{Method and Implementation}{Method and Implementation}{Method and Implementation\label{ch2}}
+  \makechapter[]{Method and Implementation}{Method and Implementation}{Method and Implementation\label{ch2}}
   \input{Chapters/2-Method-implementation.tex}
 
   \makechapter[\myquote]{Theoretical Framework}{Theoretical Framework}{Theoretical Framework\label{ch3}}

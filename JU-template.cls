@@ -34,7 +34,6 @@
 \RequirePackage[sectionbib]{bibunits}
 \usepackage[utf8]{inputenc}
 %\RequirePackage[latin1]{inputenc}
-\RequirePackage{titletoc}
 \RequirePackage{anyfontsize}
 \RequirePackage{newtxtext, newtxmath}
 \RequirePackage{color}
@@ -51,8 +50,8 @@
 \setlength{\textheight}{8.75in}
 \setlength{\evensidemargin}{-4.5mm}
 \setlength{\oddsidemargin}{5.5mm}
-\setcounter{tocdepth}{3}
-\setcounter{topnumber}{3}
+\setcounter{tocdepth}{1}
+\setcounter{topnumber}{2}
 \setcounter{totalnumber}{3}
 \renewcommand{\thechapter}{\arabic{chapter}}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
@@ -67,28 +66,11 @@
 \renewcommand{\textfraction}{.05}
 \renewcommand{\floatpagefraction}{.75}
 \renewcommand{\jot}{.6\baselineskip}
-\setlength{\intextsep}{24pt}
+\setlength{\intextsep}{12pt}
 \setlength{\headheight}{2pt}
 
 \newcommand{\ischapter}{1} % 1=chapters, 0=papers (used in contents page generation)
 
-
-
-\titleformat{\chapter}[display]
-  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{14pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{0pt}{14pt}
-
-\titleformat{\section}
-  {\normalfont\Large\bfseries}{\thesection}{1em}{}
-\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
-
-\titleformat{\subsection}
-  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
-\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-
-\titleformat{\subsubsection}
-  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
-\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 % ------------------------------------------
 % Make figure captions \it and \small
@@ -164,7 +146,7 @@
         \textbf{Date:} \today
 
    %--- Make abstract page
-   \chapter*{Abstract}
+    \addcontentsline{toc}{chapter}{Abstract}
    \noindent #6
 
    \clearpage
@@ -175,13 +157,9 @@
   \renewcommand{\contentsname}{
                 Table of Contents}
     
-  \titlecontents{chapter}[0.7cm]
-    {\vspace{0.3cm}}
-    {\contentslabel{1.7cm}}
-    {\hspace{-0.7cm}}
-    {\hfill\contentspage}
- 
-   \tableofcontents
+    % Add to TOC
+    \addcontentsline{toc}{chapter}{Table of Contents}
+    \tableofcontents
 
    \clearpage
 }
