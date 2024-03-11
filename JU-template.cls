@@ -38,6 +38,7 @@
 \RequirePackage{newtxtext, newtxmath}
 \RequirePackage{color}
 \RequirePackage{titlesec}
+\RequirePackage[font=small,labelfont=bf]{caption}
 % \RequirePackage[style=apa]{biblatex}
 
 
@@ -68,6 +69,25 @@
 \renewcommand{\jot}{.6\baselineskip}
 \setlength{\intextsep}{12pt}
 \setlength{\headheight}{2pt}
+
+% Text size
+\renewcommand{\normalsize}{\fontsize{12}{14.4}\selectfont}
+\renewcommand{\large}{\fontsize{12}{16.8}\selectfont}
+\renewcommand{\Large}{\fontsize{12}{21.6}\selectfont}
+\renewcommand{\LARGE}{\fontsize{12}{26.4}\selectfont}
+\renewcommand{\huge}{\fontsize{14}{31.2}\selectfont}
+\renewcommand{\Huge}{\fontsize{18}{36}\selectfont}
+
+% Figure and table captions
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Table}
+\renewcommand{\bibname}{References}
+
+% Figure caption size
+
+
+
+
 
 \newcommand{\ischapter}{1} % 1=chapters, 0=papers (used in contents page generation)
 
@@ -131,7 +151,7 @@
         \vspace{2cm}
 
         \noindent
-        \textbf{Examiner:} \theauthor \\
+        \textbf{Examiner:} Bilal \\
         \textbf{Supervisor:} \supervisors \\
         \textbf{Scope:} 15 hp (first-cycle education) \\
         \textbf{Date:} \today
