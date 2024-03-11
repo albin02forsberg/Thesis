@@ -1,7 +1,9 @@
+\section{DECAS Theory}
+
 \subsection{Classical Decision Theory}\label{subsec:ClassicalDecisionTheory}
 
 Classical decision theory revolves around an agents choices which are influenced around the agents own preferences
-and opinions. In short, classical theory can be described in the following way \cite{sep-decision-theory}:
+and opinions. In short, classical theory can be described in the following way \cite{Steele2020DecisionTheory}:
 
 \begin{itemize}
     \item \textbf{Preferences and prospects:} Revolves around the agents own preferences and opinions
@@ -29,96 +31,7 @@ and opinions. In short, classical theory can be described in the following way \
 \end{figure}
 
 Figure \ref{fig:ClassicalElements} shows the steps of classical decision theory. The decision-making process as described
-by Langley \cite{Langley1995}. 
-
-Langley describes the decision-making process as a either structured or unstructured process.
-The structured process is sequential and steps such as intelligence, design, choice, review and/or implementation.
-While the unstructured process is a way of trying to find a solution to a problem without a clear path, this
-often results in a iterative process defined as: define, diagnose, design and decide.
-
-The decision-maker is the agent whom is making the decision. It is important
-for the decision-maker to have a clear understanding of the domain 
-of the problem and the decision-making process. This is because the role as 
-a decision-maker is to evaluate the option which will return the highest value.
-
-Finally, the decision is the result of the decision maker evaluating the 
-options yielded by the decision-making process. 
-
-\subsection{DECAS Theory explained}
-
-DECAS Theory, which stands for Decision-making process, dEcision maker, deCision dAta, analycticS. 
-The theory aims to extend the classical decision theory explained in section
-\ref{subsec:ClassicalDecisionTheory} by adding an two additional pillars to the 
-decision-making process. The theory is based on the idea that the decision-making process
-is not only influenced by the decision-maker, but also by the data and analytics.
-
-% Tikz figure of DECAS theory with two headers "Elements of DECAS Theory" and "Classical Elements of Decision Making"
-% And five boxes below with the text "Decision-making-process", "Decision-maker", "Decision", "Data" and "Analytics" respectively
-% in a horizontal line, the header should be in a rectangle and the boxes should be in rectangles as well
-\begin{figure}[h]
-    \centering
-    \begin{tikzpicture}
-        \tikzstyle{every node}=[draw, rectangle, minimum width=6cm, minimum height=2cm, text width=6cm, align=center]
-        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (A) {Data};
-        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (B) [right=of A] {Analytics};
-        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (C) [right=of B] {Decision-making-process};
-        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (D) [right=of C] {Decision-maker};
-        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (E) [right=of D] {Decision};
-
-        \node[above=of B] {Elements of DECAS Theory};
-        \node[above=of D] {Classical Elements of Decision Making};
-        % Draw the arrows
-        \draw[->] (A) -- (B);
-        \draw[->] (B) -- (C);
-        \draw[->] (C) -- (D);
-        \draw[->] (D) -- (E);
-    \end{tikzpicture}
-    \caption{Elements of DECAS Theory}
-    \label{fig:DECASElements}
-\end{figure}\section{DECAS Theory \label{sec:DECAS}}
-
-DECAS theory proposes a new modern theory when it comes to data-driven 
-decision-making. The theory extends the classical decision theory by 
-proposing three main claims \cite{DECAS}: 
-
-\begin{enumerate}
-    \item (Big) data and analytics should be seen as separate elements
-    \item Collaboration between the human and the machine is crucial
-    \item Meaningful integration of classical decision theory can lead to better decision-making
-\end{enumerate}
-
-\subsection{Classical Decision Theory}\label{subsec:ClassicalDecisionTheory}
-
-Classical decision theory revolves around an agents choices which are influenced around the agents own preferences
-and opinions. In short, classical theory can be described in the following way \cite{sep-decision-theory}:
-
-\begin{itemize}
-    \item \textbf{Preferences and prospects:} Revolves around the agents own preferences and opinions
-    \item \textbf{Normative focus:} The agents criteria based on \textbf{preferences and prospects} under generic cirucmstances
-    \item \textbf{Expected Utility (EU) Theory:} Under uncertain situations, the agent will choose the option with the highest expected values
-\end{itemize}
-
-% Tikz figure of classical decision theory with a header with the text "Classical Elements of Decision Making"
-% And three boxes below with the text "Decision-making-process", "Decision-maker" and "Decision" respectively
-% in a horizontal line, the header should be in a rectangle and the boxes should be in rectangles as well
-\begin{figure}[h]
-    \centering
-    \begin{tikzpicture}
-        \tikzstyle{every node}=[draw, rectangle, minimum width=6cm, minimum height=1cm, text width=6cm, align=center]
-        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (A) {Decision-making-process};
-        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (B) [right=of A] {Decision-maker};
-        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (C) [right=of B] {Decision};
-        \node[above=of B] {Classical Elements of Decision Making};
-        % Draw the arrows
-        \draw[->] (A) -- (B);
-        \draw[->] (B) -- (C);
-    \end{tikzpicture}
-    \caption{Classical Elements of Decision Making}
-    \label{fig:ClassicalElements}
-\end{figure}
-
-Figure \ref{fig:ClassicalElements} shows the steps of classical decision theory. The decision-making process as described
-by Langley \cite{Langley1995}. 
+by Langley \cite{Langley1995OpeningStool}. 
 
 Langley describes the decision-making process as a either structured or unstructured process.
 The structured process is sequential and steps such as intelligence, design, choice, review and/or implementation.
@@ -166,8 +79,26 @@ is not only influenced by the decision-maker, but also by the data and analytics
     \label{fig:DECASElements}
 \end{figure}
 
+What DECAS Theory brings to the table is the idea that the decision-making process 
+should not only be influenced by the data provided, which normal 
+DDDM\footnote{Data-Driven Decision Making} also mentions, however it does not 
+emphasizes it as much \cite{Divan2017Data-drivenMaking}. 
 
+DECAS Theory proposes that the decision-making process should only be influenced 
+form the data and analytics states, as show in figure \ref{fig:DECASElements}. 
+However the last part \textit{Classical Decision Making} is still present, 
+as the decision-maker is still the agent whom is making the decision.
 
+The advantage of DECAS Theory is compared to an automated decision-making process,
+is that possible wrong decisions can be avoided, this is because bias in the data used
+or even a wrong calculation in the algorithm used in the analysis can be avoided. 
+
+\subsection{Elements of DECAS Theory}
+
+The two elements, data and analytics, are the foundation of DECAS. However the 
+implementation of these steps are not laid out in the theory. This is because they
+are up for the interested party to decide. How this thesis have choosen to implement 
+the data and analytics steps will be explained in section \ref{sec:DataAndAnalytics}.
 
 
 \section{Analyzing the Impact of DECAS on Data-Driven Decision Making} 
@@ -202,3 +133,5 @@ What this does is it provides a clearer understanding of the actions, events, ou
 
 
 Lastly, by using DECAS in the case of New Zealand’s ACC, they managed to avoid failure by including the human element and not solely relying on the machine. When it came to decision-making was restricted to analyzing the data and acting as a support, meaning it did not act as a substitute for human judgment. The source continues to explain that the decision-making process was well-defined and continued to be followed, this also includes the algorithms. Despite this case not displaying the full potential that can be reached through proper data-driven decision-making, it still supports this argument that the five elements need to be integrated, and, finding the right balance among them is crucial.
+
+\section{Implementation of the Data Analysis}\label{sec:DataAndAnalytics}

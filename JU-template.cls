@@ -183,7 +183,7 @@
  \cleardoublepage
  \renewcommand{\chaptername}{Chapter}
  \renewcommand{\ischapter}{1}
- \pagestyle{fancy}
+ \pagestyle{plain}
  \fancyhf{}
  \fancyhead[RE]{}
  \fancyhead[LO]{}
