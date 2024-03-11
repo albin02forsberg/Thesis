@@ -75,16 +75,7 @@
 % ------------------------------------------
 % Make figure captions \it and \small
 % ------------------------------------------
-\long\def\@makecaption#1#2{
-  \vskip\abovecaptionskip
-  \sbox\@tempboxa{\small{\it{#1: #2}}}
-  \ifdim \wd\@tempboxa >\hsize
-    \small{\it{#1: #2\par}}
-  \else
-    \global \@minipagefalse
-    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}
-  \fi
-  \vskip\belowcaptionskip}
+
 
 % ------------------------------------------
 % Remove text indentation and justify evenly
@@ -396,9 +387,7 @@
     \fancyhead[LE]{\thepage} 
     \fancyhead[RO]{\thepage}
     \thispagestyle{plain}
-    \par
-    {\Huge{References}}\\
-    \addcontentsline{toc}{chapter}{References}
+    \chapter{References}
     \putbib
     \cleardoublepage
 }

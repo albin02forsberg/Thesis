@@ -1,5 +1,14 @@
 \documentclass[12pt,a4paper,openright,final,twoside]{JU-template}
 
+% Tikz
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,calc,intersections,through,backgrounds,fit}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usepackage{pgfplotstable}
+\usepackage{tikz-3dplot}
+\usepackage{tikzscale}
+\usepackage{tikz-3dplot}
 
 %Included for Gather Purpose only:
 %input "thesisreferences.bib"
@@ -70,6 +79,8 @@ Lule{\aa} University of Technology\\ Lule{\aa}, Sweden}
 
 \makebib
 
+\makechapter[\myquote]{Appendix}{Appendix}{Appendix\label{ch7}}
+  \input{Appendices/Appendix1.tex}
 \end{bibunit}
 
 \end{document}
