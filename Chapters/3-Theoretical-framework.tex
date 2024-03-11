@@ -1,4 +1,81 @@
-\section{DECAS Theory \label{sec:DECAS}}
+\subsection{Classical Decision Theory}\label{subsec:ClassicalDecisionTheory}
+
+Classical decision theory revolves around an agents choices which are influenced around the agents own preferences
+and opinions. In short, classical theory can be described in the following way \cite{sep-decision-theory}:
+
+\begin{itemize}
+    \item \textbf{Preferences and prospects:} Revolves around the agents own preferences and opinions
+    \item \textbf{Normative focus:} The agents criteria based on \textbf{preferences and prospects} under generic cirucmstances
+    \item \textbf{Expected Utility (EU) Theory:} Under uncertain situations, the agent will choose the option with the highest expected values
+\end{itemize}
+
+% Tikz figure of classical decision theory with a header with the text "Classical Elements of Decision Making"
+% And three boxes below with the text "Decision-making-process", "Decision-maker" and "Decision" respectively
+% in a horizontal line, the header should be in a rectangle and the boxes should be in rectangles as well
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \tikzstyle{every node}=[draw, rectangle, minimum width=6cm, minimum height=1cm, text width=6cm, align=center]
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (A) {Decision-making-process};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (B) [right=of A] {Decision-maker};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (C) [right=of B] {Decision};
+        \node[above=of B] {Classical Elements of Decision Making};
+        % Draw the arrows
+        \draw[->] (A) -- (B);
+        \draw[->] (B) -- (C);
+    \end{tikzpicture}
+    \caption{Classical Elements of Decision Making}
+    \label{fig:ClassicalElements}
+\end{figure}
+
+Figure \ref{fig:ClassicalElements} shows the steps of classical decision theory. The decision-making process as described
+by Langley \cite{Langley1995}. 
+
+Langley describes the decision-making process as a either structured or unstructured process.
+The structured process is sequential and steps such as intelligence, design, choice, review and/or implementation.
+While the unstructured process is a way of trying to find a solution to a problem without a clear path, this
+often results in a iterative process defined as: define, diagnose, design and decide.
+
+The decision-maker is the agent whom is making the decision. It is important
+for the decision-maker to have a clear understanding of the domain 
+of the problem and the decision-making process. This is because the role as 
+a decision-maker is to evaluate the option which will return the highest value.
+
+Finally, the decision is the result of the decision maker evaluating the 
+options yielded by the decision-making process. 
+
+\subsection{DECAS Theory explained}
+
+DECAS Theory, which stands for Decision-making process, dEcision maker, deCision dAta, analycticS. 
+The theory aims to extend the classical decision theory explained in section
+\ref{subsec:ClassicalDecisionTheory} by adding an two additional pillars to the 
+decision-making process. The theory is based on the idea that the decision-making process
+is not only influenced by the decision-maker, but also by the data and analytics.
+
+% Tikz figure of DECAS theory with two headers "Elements of DECAS Theory" and "Classical Elements of Decision Making"
+% And five boxes below with the text "Decision-making-process", "Decision-maker", "Decision", "Data" and "Analytics" respectively
+% in a horizontal line, the header should be in a rectangle and the boxes should be in rectangles as well
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \tikzstyle{every node}=[draw, rectangle, minimum width=6cm, minimum height=2cm, text width=6cm, align=center]
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (A) {Data};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (B) [right=of A] {Analytics};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (C) [right=of B] {Decision-making-process};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (D) [right=of C] {Decision-maker};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (E) [right=of D] {Decision};
+
+        \node[above=of B] {Elements of DECAS Theory};
+        \node[above=of D] {Classical Elements of Decision Making};
+        % Draw the arrows
+        \draw[->] (A) -- (B);
+        \draw[->] (B) -- (C);
+        \draw[->] (C) -- (D);
+        \draw[->] (D) -- (E);
+    \end{tikzpicture}
+    \caption{Elements of DECAS Theory}
+    \label{fig:DECASElements}
+\end{figure}\section{DECAS Theory \label{sec:DECAS}}
 
 DECAS theory proposes a new modern theory when it comes to data-driven 
 decision-making. The theory extends the classical decision theory by 
