@@ -174,7 +174,59 @@ The \textit{Data Types} are the values to be analysed, this for example could be
     \item Grids
 \end{itemize}
 
+The \textit{attributes} are the values of the items, these attributes have their own two attribute types.
+It is either \textit{Categorical} or \textit{Ordered}. Categorical means that the values can be identified
+by a category. For example, the color of a car. Ordered means that the values can be mesured in different ways. 
+Munzner describes ordered as either \textit{Ordinal} or \textit{Quantitative}.
+Ordinal could for example be the size of something, while quantitative could be the time until the car runs 
+out of fuel.
+
+% Figure with five boxes, each box should have the headers
+% "Tables", "Networks and Trees", "Fields", "Geometry" and "Clusters, Sets, Lists"
+% Inside these boxes there should be the following: 
+% Inside "Tables" there should be the text "Items" and "Attributes"
+% Inside "Networks and Trees" there should be the text "Items (nodes)", "Links" and "Attributes"
+% Inside "Fields" there should be the text "Positions" and "Grids" and "Attributes"
+% Inside "Geometry" there should be the text "Items" and "Positions"
+% Inside "Clusters, Sets, Lists" there should be the text "Items"
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \tikzstyle{every node}=[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center]
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (A) {Tables};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (B) [right=of A] {Networks and Trees};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (C) [right=of B] {Fields};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (D) [right=of C] {Geometry};
+        \node[draw, rectangle, minimum width=2cm, minimum height=1cm, text width=2cm, align=center] (E) [right=of D] {Clusters, Sets, Lists};
+        % A
+        \node[below=of A] (A1) {Items} ;
+        \node[below=of A, yshift=-1.2cm] {Attributes};
+        % B
+        \node[below=of B] (B1) {Links};
+        \node[below=of B, yshift=-1.2cm] {Attributes};
+        % C 
+        \node[below=of C] (C1) {Grids};
+        \node[below=of C, yshift=-1.2cm] {Position};
+        \node[below=of C, yshift=-2.4cm] {Attributes};
+        % D
+        \node[below=of D] (D1) {Items};
+        \node[below=of D, yshift=-1.2cm] {Positions};
+        % E
+        \node[below=of E] (E1) {Items};
+        % Lines form Top to first row
+        \draw[->] (A) -- (A1);
+        \draw[->] (B) -- (B1);
+        \draw[->] (C) -- (C1);
+        \draw[->] (D) -- (D1);
+        \draw[->] (E) -- (E1);
+    \end{tikzpicture}
+    \caption{Data Types}
+    \label{fig:DataTypes}
+\end{figure}
+
+
 \textit{Dataset Types} are the way the data types \textit{relate} to 
-one another
+one another, examples of this can be seen in figure \ref{fig:DataTypes}
 
 \section{Data Analysis}\label{sec:DataAndAnalytics}

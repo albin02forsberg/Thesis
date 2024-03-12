@@ -39,7 +39,8 @@
 \RequirePackage{color}
 \RequirePackage{titlesec}
 \RequirePackage[font=small,labelfont=bf]{caption}
-\RequirePackage[style=apa]{biblatex}
+\RequirePackage{subcaption}
+% \RequirePackage[style=apa]{biblatex}
 
 
 % ******************************************************
