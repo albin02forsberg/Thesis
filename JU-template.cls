@@ -35,11 +35,11 @@
 \usepackage[utf8]{inputenc}
 %\RequirePackage[latin1]{inputenc}
 \RequirePackage{anyfontsize}
-\RequirePackage{newtxtext, newtxmath}
+%\RequirePackage{newtxtext, newtxmath}
 \RequirePackage{color}
 \RequirePackage{titlesec}
 \RequirePackage[font=small,labelfont=bf]{caption}
-% \RequirePackage[style=apa]{biblatex}
+\RequirePackage[style=apa]{biblatex}
 
 
 % ******************************************************
