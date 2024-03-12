@@ -154,7 +154,7 @@
         \vspace{2cm}
 
         \noindent
-        \textbf{Examiner:} Bilal \\
+        \textbf{Examiner:} Bilal Zafar \\
         \textbf{Supervisor:} \supervisors \\
         \textbf{Scope:} 15 hp (first-cycle education) \\
         \textbf{Date:} \today
