@@ -120,11 +120,14 @@
         
         % 40pt font size
         \fontsize{40}{40}\selectfont
-        \textbf{Bachelors Thesis Name}
+        % Make sure the title fits on the page
+         \begin{minipage}{\textwidth}
+        \textbf{\thesistitle}
+         \end{minipage}
         
         \vspace{0.5cm}
         \LARGE
-        Maybe Subtitle
+        % Maybe Subtitle
         
         \vfill
         \small
