@@ -181,6 +181,8 @@ Munzner describes ordered as either \textit{Ordinal} or \textit{Quantitative}.
 Ordinal could for example be the size of something, while quantitative could be the time until the car runs 
 out of fuel.
 
+Manzners visual representation of this step can be seen in appendix \ref{app:www-what}.
+
 % Figure with five boxes, each box should have the headers
 % "Tables", "Networks and Trees", "Fields", "Geometry" and "Clusters, Sets, Lists"
 % Inside these boxes there should be the following: 
@@ -227,6 +229,80 @@ out of fuel.
 
 
 \textit{Dataset Types} are the way the data types \textit{relate} to 
-one another, examples of this can be seen in figure \ref{fig:DataTypes}
+one another, examples of this can be seen in figure \ref{fig:DataTypes}. 
+The dataset types can be ordered in different directions, like sequential, diverging or cyclic.
+
+\subsection{The Why}
+
+The \textit{Why} describes the \textit{Actions} and \textit{Targets} of the visualization.
+
+In this step, we decide on what \textit{actions} we need to take and what would be beneficial to the end user.
+We could analyze the data, either by consuming or by prodcuing it. We could also search for known or unknown patterns
+in the data. An other option would be to query and comparing and return a summary \cite{Munzner2015VisualizationDesign}.
+
+\textit{Targets} are the goals of the visualization. If we look at the whole dataset, we could be looking for
+trends, outliers or features. We could also be looking for a specific item or a specific attribute, by analyzing either 
+the distribution or the extremes. Or if we are looking on many attributes, we could se how they depend on each other, how they
+correlate or their similarity.
+
+For network data, an interesting factor is the topology and paths of the network. 
+
+Manzners visual representation of this step can be seen in appendix \ref{app:www-why}.
+
+\subsection{The How}
+
+The \textit{How} is about how the visualizations and interactions with 
+the data are designed. 
+
+First is how we \textit{encode} the data. The first step is to \textit{arrange} the data, this can be done in a number of ways for example
+we could use a timeline, plot a chart as separate items, ordered or aligned. And
+we could also apply it to real world things, like plotting locations on a map.
+
+We also need to map the data. This is based of categorical and ordered attributes. 
+
+% Table with subtables for ordered and categorical
+% Categorial have hue and shape
+% Ordered have saturation, luminance, size, angle, curvature and motion
+\begin{table}[h]
+    \centering
+
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{Categorical} & \textbf{Ordered} \\
+            \hline
+            Hue & Saturation \\
+            Shape & Luminance \\
+            & Size, angle, curvature etc \\
+            & Motion (Direction, rate, frequency etc) \\
+            \hline
+        \end{tabular}
+
+    \caption{Encoding Data}
+    \label{tab:EncodingData}
+\end{table}
+
+It is also important how the user can \textit{manipulate} the data. Should the user be able 
+to change the representation of the data, select an item or attribute for more information, or 
+navigate around different parts of the data. 
+
+The \textit{How} is also about how to \textit{facet} the data. One option is to 
+\textit{juxtapose}, meaning showing to tables side by side, or \textit{partition} the data by splitting
+a table into smaller tables.
+Another way is to \textit{superinpose}, meaning combining two tables into one.
+
+Finally we need to be able to reduce the data. This is possible in three different ways.
+We can \textit{filter}, \textit{aggregate} or \textit{embed} the data.
+\textit{Filter} means to remove data based on one or several conditions. 
+\textit{Aggregate} means to combine data into a smaller set.
+\textit{Embed} means to show the data in a smaller space with the ability to expand.
+
+Manzners visual representation of this step can be seen in appendix \ref{app:www-how}.
+
+\subsection{The iterative process}
+
+The What-Why-How model is an iterative process, while one interation could be satisfactory for 
+smaller projects and organizations it could be beneficial to iterate over the process.
+This means that we can start over with the \textit{What} and the current implementation, and 
+see if we can improve upon the \textit{Why} and the \textit{How}.
 
 \section{Data Analysis}\label{sec:DataAndAnalytics}
