@@ -22,46 +22,46 @@ Our third option is conducting interviews, which is a qualitative method. We wil
 
 Originally, we received a dataset from the Advanced Web Development course, comprising 138 distinct stores situated in Jönköping. Each store is accompanied by its name and district.
 
-\vspace{6pt} 
-
 Three variables are insufficient for the project's requirements, necessitating an expansion of our dataset. Two approaches were employed to acquire additional variables for the 138 stores. The first method involved online research, utilizing \cite{NotavailableAllaBolag}, which furnishes data about specific companies/stores. The new variables gathered include Revenue, Yearly Result, Result after financial net, Total assets, Profit margin, Solvency, Cash flow, and Gross profit margin. Each value was extracted from a financial report generated in December 2022. The second online resource utilized was \cite{NotavailableGoogleMaps}, aiming to incorporate two additional variables: longitude and latitude for each store. 
-\vspace{6pt} 
 
 We aimed to introduce two more variables, namely "Number of employees" and "Number of department stores in the country". However, our online research yielded no data for these variables. Therefore, we have devised an alternative approach: conducting interviews. Our plan involves visiting each store and interviewing current or former employees to gather information on the number of employees and the number of department stores in the country.
 
-\vspace{6pt}
 The dataset is projected to undergo substantial growth as we integrate data from forthcoming interviews. Originally encompassing solely two variables - Store name and District - it is expected to expand to encompass a comprehensive set of 14 variables. These will entail Store name, District, Revenue, Yearly Result, Result after financial net, Total assets, Profit margin, Solvency, Cash flow, Gross profit margin, Number of employees, Number of department stores in the country, Longitude, and Latitude coordinates, in addition to the newly acquired information acquired through interviews.
 
 \section{Data Analysis}
-Currently, we have two options when it comes to implementing and analyzing data we will collect, we could either use Python or normal HTML, CSS, and JavaScript. The authors are both experienced in both options. 
+% Currently, we have two options when it comes to implementing and analyzing data we will collect, we could either use Python or normal HTML, CSS, and JavaScript. The authors are both experienced in both options. 
 
-\textbf{Option 1: Python}
-
-
-If we were to use Python, the data collected would be stored in MariaDB which is a branch of MySQL. When it comes to database operations, we will use SQLAlchemy or Djangos Object-relational Mapper (ORM). The backend will use Flask or Django to create API endpoints to interact with MariaDB.
-Python libraries such as Scikit-learn or TensorFlow will be used to develop prediction algorithms. The backend can process data fetched from MariaDB, apply the prediction model, and send results to the frontend.
-When it comes to the feedback mechanism, API endpoints will be implemented to receive user feedback on predictions, which can be used to refine the model.
-
-\textbf{Option 2: HTML, CSS and JavaScript}
+%\textbf{Option 1: Python}
 
 
-The second option will use HTML, CSS, and JavaScript. HTML will be used to design the user interface and then style it with CSS, this includes forms for the user inputs and sections to display predictions.  JavaScript offers different libraries or frameworks such as React or Vue.js, one of them will be used as a framework. It will be used to make the web application interactive, but also to fetch data from the backend using AJAX or Fetch API. Lastly, display predictions, and handle user feedback submissions.
+%If we were to use Python, the data collected would be stored in MariaDB which is a branch of MySQL. When it comes to database operations, we will use SQLAlchemy or Djangos Object-relational Mapper (ORM). The backend will use Flask or Django to create API endpoints to interact with MariaDB.
+%Python libraries such as Scikit-learn or TensorFlow will be used to develop prediction algorithms. The backend can process data fetched from MariaDB, apply the prediction model, and send results to the frontend.
+%When it comes to the feedback mechanism, API endpoints will be implemented to receive user feedback on predictions, which can be used to refine the model.
+
+%\textbf{Option 2: HTML, CSS and JavaScript}
 
 
-Both options should aim to produce a dynamic application where predictions can be made based on the data stored in the database, and where it will be presented through a web interface and refined through ongoing feedback.
+%The second option will use HTML, CSS, and JavaScript. HTML will be used to design the user interface and then style it with CSS, this includes forms for the user inputs and sections to display predictions.  JavaScript offers different libraries or frameworks such as React or Vue.js, one of them will be used as a framework. It will be used to make the web application interactive, but also to fetch data from the backend using AJAX or Fetch API. Lastly, display predictions, and handle user feedback submissions.
+
+
+%Both options should aim to produce a dynamic application where predictions can be made based on the data stored in the database, and where it will be presented through a web interface and refined through ongoing feedback.
+
+To analyze the data, a tool will be created that implements the WHAT-WHY-HOW method into a user friendly interface. 
+
+The tool will consists of a frontend written in \textit{Next.js} and typescript. \textit{Next.js} is a framework based on \textit{React.js}. The frontend will be used to display an user provided dataset, and the user will be able to select from different tools which are based on the WHAT-WHY-HOW method.
+
+The backend of the tool will be written in \textit{Nest.js} and typescript. The backend will need to have features to compute the different steps of the WHAT-WHY-HOW method. The backend will also need to have a database to store the user provided dataset. The database will be a \textit{PostgreSQL} database. For the sake of simplicity for this project, the database will only support the current 
+dataset. However, the methods this report will present can be used, in theory, with any dataset. A dynamic database should be implemented in the future to make the tool more versatile and useful for 
+different companies and organizations.
 
 \section{Validity and Reliability}
 From the start, the validity and reliability aspects of our research have been very important, these factors have guided us in choosing how we collect data, analyze it, and pick our theories. Below, we will look through and explain the choices we made which will show that our results are trustworthy and solid.  
 
-
 \textbf{Validity:}
-
 
 The validity aspect of the research is to make sure that our methods for collecting and analyzing data are crucial for the accuracy of our study’s conclusions.  For example, when it comes to the surveys, we need to craft them to ensure that each question accurately measures the intended variables. This careful consideration reduces the risk of collecting data that do not reflect what we intended, even if the survey is carried out perfectly. Similarly, choosing the DECAS theory and Tamara Munzner's What-Why-How framework was based on how well they fit and could be applied to our data, ensuring that our research is built on theories that match our goals.
 
-
 \textbf{Reliability:}
-
 
 The reliability aspect of the research depends on how consistent our data gathering tools are and whether others can achieve the same result by repeating our study. For us to make sure that other researchers find similar conclusions when they conduct the same research on our study, we have used standard methods such as well-organized surveys and specific interviews. The analyzing part uses well-known computing methods and clear algorithms which also makes our findings more reliable.
 \section{Considerations}
@@ -70,7 +70,6 @@ During the research, we have carefully considered various important factors to e
 \textbf{Scientific Considerations}
 
 With our approach, we aim to apply the DECAS theory and Tamara Munzner’s What-Why-How framework to our collected dataset by using thorough methods for analyzing and interpreting data. To create a solid, clear, reproducible approach, with the result and findings we try to contribute to the fields of computer science and data visualization.
-
 
 \textbf{Ethical Considerations}
 
