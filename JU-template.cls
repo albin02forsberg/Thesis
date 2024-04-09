@@ -161,6 +161,8 @@
         \textbf{Date:} \today
 
    %--- Make abstract page
+   \clearpage
+   \chapter*{Abstract}
     \addcontentsline{toc}{chapter}{Abstract}
    \noindent #6
 
